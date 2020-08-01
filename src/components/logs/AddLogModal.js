@@ -12,12 +12,15 @@ const AddLogModal = () => {
       });
     } else {
       console.log(message, tech, attention);
+      setMessage('');
+      setAttention(false);
+      setTech('');
     }
   };
   return (
     <div id="add-log-modal" className="modal" style={modalStyle}>
       <div className="modal-content">
-        <h4>Enter System Log</h4>
+        <h4> Enter System Log </h4>
         <div className="row">
           <div className="input-field">
             <input
@@ -42,9 +45,9 @@ const AddLogModal = () => {
               <option value="" disabled>
                 Select Technician
               </option>
-              <option value="John Doe">John Doe</option>
-              <option value="Sam Smith">Sam Smith</option>
-              <option value="Sara Wilson">Sara Wilson</option>
+              <option value="John Doe"> John Doe </option>
+              <option value="Sam Smith"> Sam Smith </option>
+              <option value="Sara Wilson"> Sara Wilson </option>
             </select>
           </div>
         </div>
@@ -58,8 +61,8 @@ const AddLogModal = () => {
                   checked={attention}
                   value={attention}
                   onChange={e => setAttention(!attention)}
-                />{' '}
-                <span>Need Attention</span>
+                />
+                <span> Need Attention </span>
               </label>
             </p>
           </div>
