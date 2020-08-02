@@ -1,13 +1,5 @@
 {
-  "logs": [
-    {
-      "message": "server error 121",
-      "attention": false,
-      "tech": "Sam Smith",
-      "date": "2020-08-02T15:02:04.693Z",
-      "id": 1
-    }
-  ],
+  "logs": [],
   "techs": [
     {
       "id": 1,
