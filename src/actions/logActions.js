@@ -1,12 +1,12 @@
 import * as ACTIONS from './types';
 
 
-// Get all Logs 
+// Get all Logs from server
 export const getLogs = () => async dispatch => {
     try {
         setLoading();
         const res = await fetch('/logs');
-        const data = res.json();
+        const data = await res.json();
         dispatch({
             type: ACTIONS.GET_LOGS,
             payload: data
