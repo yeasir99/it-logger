@@ -15,6 +15,12 @@ export default (state = initialState, action) => {
         logs: payload,
         loading: false,
       };
+    case ACTIONS.ADD_LOG:
+      return {
+        ...state,
+        logs: [payload, ...state.logs],
+        loading: false,
+      };
     case ACTIONS.SET_LOADING:
       return {
         ...state,

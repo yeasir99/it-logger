@@ -1,25 +1,11 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Change hard drive on workstation 005",
+      "message": "server error 121",
       "attention": false,
-      "date": "07-31-2020",
-      "tech": "Sam Smith"
-    },
-    {
-      "id": 2,
-      "message": "Workstation 007 not posting",
-      "attention": true,
-      "date": "07-31-2020",
-      "tech": "John Doe"
-    },
-    {
-      "id": 3,
-      "message": "Change memory on workstation 050",
-      "attention": false,
-      "date": "07-31-2020",
-      "tech": "Sara Wilson"
+      "tech": "Sam Smith",
+      "date": "2020-08-02T15:02:04.693Z",
+      "id": 1
     }
   ],
   "techs": [
