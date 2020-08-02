@@ -1,5 +1,20 @@
 {
-  "logs": [],
+  "logs": [
+    {
+      "id": 1,
+      "message": "fixed hard drive 052",
+      "attention": false,
+      "tech": "Sam Smith",
+      "date": "2020-08-02T20:32:33.043Z"
+    },
+    {
+      "message": "workstation 06 hard drive problem ",
+      "attention": false,
+      "tech": "John Doe",
+      "date": "2020-08-02T16:05:09.654Z",
+      "id": 2
+    }
+  ],
   "techs": [
     {
       "id": 1,
