@@ -1,13 +1,19 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { deleteTech } from '../../actions/techAction';
 import { AiFillDelete } from 'react-icons/ai';
 
-const TechItem = ({ tech }) => {
+const TechItem = ({ tech, deleteTech }) => {
   return (
     <li className="collection-item">
       <div>
         {tech.firstName} {tech.lastName}
-        <a href="#!" className="secondary-content">
+        <a
+          href="#!"
+          className="secondary-content"
+          onClick={() => deleteTech(tech.id)}
+        >
           <AiFillDelete />
         </a>
       </div>
@@ -17,6 +23,7 @@ const TechItem = ({ tech }) => {
 
 TechItem.propTypes = {
   tech: PropTypes.object.isRequired,
+  deleteTech: PropTypes.func.isRequired,
 };
 
-export default TechItem;
+export default connect(null, { deleteTech })(TechItem);
